@@ -1,0 +1,33 @@
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #61dafb;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.menu{
+    width: 45%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    display: block;
+    padding: 8px;
+    text-shadow: red;
+    text-decoration: none;
+}
+header p{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2em;
+}

@@ -1,24 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import {Route, Routes} from "react-router-dom";
+import Main from "./Components/Main/main";
+import Go from "./Components/GO/go";
+import Iphone from "./Components/Iphone/iphone";
+import IphonePage from "./Components/Iphone/IphonePage"
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+<Routes>
+  <Route path={"/"} element={<Main/>}/>
+  <Route path={"/Iphone"} element={<IphonePage/>}/>
+  <Route path={"/MacBook"} element={<Iphone/>}/>
+  <Route path={"/Samsung"} element={<Iphone/>}/>
+  <Route path={"/Xiaomi"} element={<Iphone/>}/>
+</Routes>
   );
 }
 
